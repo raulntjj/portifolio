@@ -8,10 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 const experiences = [
   {
     role: 'Desenvolvedor Pleno Full Stack',
-    company: 'VERSA SAUDE',
+    company: 'VERSA SAÚDE',
     period: 'Dez 2025 – Atual',
     description:
-      'Desenvolvimento de soluções para Consórcios de Saúde com foco em alta disponibilidade, segurança LGPD e processamento assíncrono usando Laravel Horizon e Redis.',
+      'Desenvolvimento de soluções para Consórcios de Saúde com foco em alta disponibilidade e segurança LGPD.',
     current: true,
   },
   {
@@ -19,7 +19,7 @@ const experiences = [
     company: 'MORAR LEGAL',
     period: 'Ago 2024 – Dez 2025',
     description:
-      'Modernização de sistemas legados migrando frontends Blade para Next.js. Responsável pela arquitetura Multitenancy com 50 instâncias isoladas e desenvolvimento do MVP Matrícula Legal com microsserviços.',
+      'Desenvolvimento do MVP Matrícula Legal com microsserviços, modernização de sistemas legados migrando frontends Blade para Next.js, experiência com arquitetura multitenancy, participação full-cycle dos produtos do ecossistema.',
     current: false,
   },
   {
@@ -27,7 +27,7 @@ const experiences = [
     company: 'VERSA TEC',
     period: 'Mai 2024 – Ago 2024',
     description:
-      'Desenvolvimento de APIs REST robustas em Laravel com documentação Swagger. Construção de dashboards administrativos dinâmicos com Next.js aplicando métodos ágeis Kanban.',
+      'Desenvolvimento e participação full-cycle de APIs REST robustas em Laravel com documentação Swagger/OpenAPI. Construção de dashboards administrativos dinâmicos com Next.js aplicando métodos ágeis Kanban.',
     current: false,
   },
   {
@@ -35,7 +35,7 @@ const experiences = [
     company: 'Autônomo',
     period: 'Dez 2023 – Atual',
     description:
-      'Desenvolvimento do Planning App (eedja.com), Hub-BI (bi.superglobo.com.br) e multitenancy-api. SaaS completos e soluções customizadas de Business Intelligence.',
+      'Desenvolvimento do Planning App (eedja.com), Hub-BI (bi.superglobo.com.br) e multitenancy-api. Soluções completas e customizadas como SaaS e Landing pages.',
     current: false,
   },
 ];
