@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     title: 'Planning App',
-    description: 'SaaS completo para gestão de planejamento escolar com arquitetura Lumen/Next.js.',
+    description: 'Software para gestão de planejamento escolar.',
     stack: ['Lumen', 'Next.js'],
     link: 'https://eedja.com',
     github: null,
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: 'Multitenancy API',
-    description: 'Arquitetura para suporte a múltiplos inquilinos (SaaS) com isolamento de dados.',
+    description: 'Arquitetura para suporte a múltiplos inquilinos com isolamento de dados.',
     stack: ['PHP', 'Laravel'],
     link: null,
     github: 'https://github.com/raulntjj/multitenancy-api',
