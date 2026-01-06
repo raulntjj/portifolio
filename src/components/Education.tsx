@@ -15,7 +15,7 @@ const certifications = [
   'PHP 7 – COD3R',
 ];
 
-const currentStudies = ['HyperF', 'Event Sourcing', 'CQRS', 'DDD'];
+const currentStudies = ['HyperF', 'Event Sourcing', 'CQRS', 'Mensageria em PHP e C#'];
 
 const Education = () => {
   const sectionRef = useRef<HTMLElement>(null);
