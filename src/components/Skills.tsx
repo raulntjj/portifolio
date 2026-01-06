@@ -13,7 +13,7 @@ const skillCategories = [
   {
     title: 'Frontend & Mobile',
     color: 'accent',
-    skills: ['JavaScript/TypeScript', 'Next.js', 'React', 'Vue.js', 'Jest', 'Blade (Laravel)'],
+    skills: ['JavaScript/TypeScript', 'Next.js', 'React', 'Vue.js', 'Jest', 'Blade (Laravel)', 'React Native'],
   },
   {
     title: 'Bancos & Armazenamento',
