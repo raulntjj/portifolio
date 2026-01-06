@@ -6,11 +6,11 @@ import { Code2, Rocket, Server, Sparkles } from 'lucide-react';
 gsap.registerPlugin(ScrollTrigger);
 
 const highlights = [
-  {
-    icon: Server,
-    title: 'Arquitetura Multitenancy',
-    description: 'Gestão de 50+ instâncias com isolamento completo de dados',
-  },
+  // {
+  //   icon: Server,
+  //   title: 'Arquitetura Multitenancy',
+  //   description: 'Gestão de 50+ instâncias com isolamento completo de dados',
+  // },
   {
     icon: Code2,
     title: 'Modernização de Sistemas',
@@ -113,15 +113,12 @@ const About = () => {
           Desenvolvedor Full Stack com sólida experiência em desenvolvimento de APIs, 
           interfaces responsivas e modernização de sistemas legados. Proficiência em 
           <span className="text-primary"> PHP</span> com histórico comprovado em transições 
-          de monolitos para arquiteturas desacopladas. Experiência em gestão de infraestrutura 
-          <span className="text-accent"> Multitenancy</span> e adoção de 
-          <span className="text-primary"> Inteligência Artificial</span> para acelerar 
-          o ciclo de desenvolvimento.
+          de monolitos para arquiteturas desacopladas.
         </p>
 
         <div
           ref={cardsRef}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {highlights.map((item, index) => (
             <div
