@@ -140,7 +140,7 @@ const Hero = () => {
           ref={subtitleRef}
           className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8 font-light"
         >
-          <span className="text-primary font-medium">Desenvolvedor PHP</span>
+          <span className="text-primary font-medium">Desenvolvedor Full Stack</span>
         </p>
 
         <div ref={ctaRef} className="flex flex-wrap items-center justify-center gap-4">
