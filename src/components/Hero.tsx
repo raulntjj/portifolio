@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Github, Mail, MapPin, ChevronDown } from 'lucide-react';
+import LightPillar from './LightPillar';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -96,6 +97,23 @@ const Hero = () => {
       ref={heroRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden noise-overlay"
     >
+      {/* Light Pillar Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <LightPillar
+          topColor="#5227FF"
+          bottomColor="#FF9FFC"
+          intensity={1}
+          rotationSpeed={0.3}
+          glowAmount={0.002}
+          pillarWidth={3}
+          pillarHeight={0.4}
+          noiseIntensity={0.5}
+          pillarRotation={25}
+          interactive={false}
+          mixBlendMode="screen"
+          quality="high"
+        />
+      </div>
       {/* Background grid */}
       <div
         ref={gridRef}
