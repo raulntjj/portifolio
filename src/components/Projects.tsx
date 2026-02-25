@@ -7,9 +7,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    title: 'Planning App',
-    description: 'Software para gestão de planejamento escolar.',
-    stack: ['Lumen', 'Next.js'],
+    title: 'Aurora SaaS',
+    description: 'Plataforma para gestão e planejamento escolar.',
+    stack: ['Lumen', 'Redis', 'Next.js', 'PostgreSQL', 'Docker'],
     link: 'https://eedja.com',
     github: null,
     status: 'live',
@@ -17,40 +17,58 @@ const projects = [
   },
   {
     title: 'Hub-BI',
-    description: 'Plataforma de Business Intelligence customizada para a SuperGlobo.',
-    stack: ['Next.js'],
+    description: 'Dashboard corporativo de Business Intelligence para análise de dados estratégicos e tomada de decisão em tempo real.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind', 'Docker'],
     link: 'https://bi.superglobo.com.br',
     github: null,
     status: 'live',
     gradient: 'from-accent to-primary',
   },
   {
+    title: 'Subscription Tracker',
+    description: 'Monorepo com submódulos para gestão de assinaturas, integrando mensageria e processamento assíncrono de rotinas.',
+    stack: ['Laravel Octane', 'Redis', 'RabbitMQ', 'Next.js', 'MySQL', 'Docker', 'DDD', 'CQS', 'i18n', 'Grafana', 'Prometheus'],
+    link: null,
+    github: 'https://github.com/raulntjj/subscription-tracker',
+    status: 'opensource',
+    gradient: 'from-accent via-primary to-accent',
+  },
+  {
     title: 'Multitenancy API',
-    description: 'Arquitetura para suporte a múltiplos inquilinos com isolamento de dados.',
-    stack: ['PHP', 'Laravel'],
+    description: 'Core API estruturada com isolamento de dados (Database-per-tenant), aplicando princípios avançados de design de software.',
+    stack: ['PHP', 'Lumen', 'Docker', 'MySQL'],
     link: null,
     github: 'https://github.com/raulntjj/multitenancy-api',
     status: 'opensource',
     gradient: 'from-primary via-accent to-primary',
   },
   {
-    title: 'Auth Service .NET',
-    description: 'Serviço de autenticação/autorização com JWT e Identity.',
+    title: 'Identity Auth Service',
+    description: 'Microsserviço de Autenticação e Autorização robusto utilizando arquitetura limpa, Identity e JWT.',
     stack: ['.NET', 'C#'],
     link: null,
     github: 'https://github.com/raulntjj/auth-api',
     status: 'opensource',
     gradient: 'from-accent via-primary to-accent',
   },
-  {
-    title: 'BeatFlow',
-    description: 'Frontend de rede social desenvolvido em colaboração acadêmica.',
-    stack: ['Next.js', 'React'],
-    link: null,
-    github: 'https://github.com/raulntjj/beatflow-app',
-    status: 'opensource',
-    gradient: 'from-primary to-accent',
-  },
+  // {
+  //   title: 'BeatFlow Api',
+  //   description: 'API REST para rede social de músicos, construída com foco em performance e escalabilidade, utilizando Laravel Lumen e Redis para caching.',
+  //   stack: ['Laravel', 'MySQL'],
+  //   link: null,
+  //   github: 'https://github.com/raulntjj/beatflow-api',
+  //   status: 'opensource',
+  //   gradient: 'from-primary to-accent',
+  // },
+  // {
+  //   title: 'BeatFlow App',
+  //   description: 'Projeto de rede social para músicos, para um trabalho acadêmico com consumo eficiente de APIs REST.',
+  //   stack: ['Next.js', 'React'],
+  //   link: null,
+  //   github: 'https://github.com/raulntjj/beatflow-app',
+  //   status: 'opensource',
+  //   gradient: 'from-primary to-accent',
+  // },
 ];
 
 const Projects = () => {
@@ -103,7 +121,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" ref={sectionRef} className="section-padding relative bg-secondary/20">
+    <section id="projects" ref={sectionRef} className="section-padding relative">
       <div className="container-custom">
         <div ref={headingRef} className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium text-accent border border-accent/30 mb-4">
@@ -122,7 +140,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative rounded-2xl overflow-hidden glass gradient-border hover:glow-accent transition-all duration-500 hover:-translate-y-2"
+              className="group relative rounded-2xl overflow-hidden bg-muted/25 transition-all duration-500 hover:-translate-y-2"
             >
               {/* Gradient header */}
               <div

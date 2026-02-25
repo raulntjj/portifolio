@@ -67,12 +67,12 @@ const Contact = () => {
             Vamos Conversar?
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-            Desenvolvedor Full Stack Pleno especializado em PHP, .NET e Node.js. Sempre aberto a novos desafios e oportunidades.
+            Sempre aberto a novos desafios e oportunidades.
           </p>
         </div>
 
         <div ref={contentRef} className="max-w-2xl mx-auto">
-          <div className="p-8 md:p-12 rounded-3xl glass gradient-border glow-accent">
+          <div className="p-8 md:p-12 rounded-3xl glass border-primary glow-accent">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
               <a
                 href="mailto:raulntjj@gmail.com"
@@ -105,7 +105,7 @@ const Contact = () => {
               </a>
             </div>
 
-            <div className="flex items-center justify-center gap-2 text-muted-foreground mb-8">
+            <div className="flex items-center justify-center gap-2 text-foreground mb-8">
               <MapPin className="w-4 h-4" />
               <span>Entre Folhas, MG • Brasil</span>
             </div>
@@ -113,7 +113,7 @@ const Contact = () => {
             <div className="text-center">
               <a
                 href="mailto:raulntjj@gmail.com"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:scale-105 hover:shadow-lg hover:shadow-primary/25 transition-all duration-300"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:scale-105 hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 cursor-pointer"
               >
                 <Send className="w-5 h-5" />
                 <span>Enviar Mensagem</span>

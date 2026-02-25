@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Code2, Rocket, Server, Sparkles } from 'lucide-react';
+import { Code2, Database, Layers, Rocket, Server, Sparkles } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,19 +12,19 @@ const highlights = [
   //   description: 'Gestão de 50+ instâncias com isolamento completo de dados',
   // },
   {
-    icon: Code2,
-    title: 'Modernização de Sistemas',
-    description: 'Migração de monolitos para arquiteturas desacopladas',
+    icon: Layers,
+    title: 'Arquitetura & Design de Software',
+    description: 'DDD e outros princípios de Clean Architecture na construção de soluções, garantindo sistemas robustos e alinhados ao negócio.',
+  },
+  {
+    icon: Database,
+    title: 'SaaS & Multitenancy',
+    description: 'Desenvolvimento de plataformas robustas com isolamento seguro de dados para múltiplos clientes e inquilinos.',
   },
   {
     icon: Rocket,
-    title: 'DevOps & Cloud',
-    description: 'AWS, Docker, GitHub Actions e infraestrutura escalável',
-  },
-  {
-    icon: Sparkles,
-    title: 'IA & Inovação',
-    description: 'Microsserviços com processamento inteligente de documentos',
+    title: 'DevOps, Mensageria & Cloud',
+    description: 'Integrações assíncronas e conteinerização com Docker e AWS para alta escalabilidade e resiliência.',
   },
 ];
 
@@ -95,14 +95,14 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="section-padding relative">
+    <section id="about" ref={sectionRef} className="section-padding relative section-padding bg-secondary/20 noise-overlay">
       <div className="container-custom">
         <div ref={headingRef} className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium text-primary border border-primary/30 mb-4">
             Sobre Mim
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-            Transformando Ideias em Código
+            Engenharia de Software de Ponta a Ponta
           </h2>
         </div>
 
@@ -110,10 +110,7 @@ const About = () => {
           ref={textRef}
           className="text-lg md:text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-16 leading-relaxed"
         >
-          Desenvolvedor Full Stack com sólida experiência em desenvolvimento de APIs, 
-          interfaces responsivas e modernização de sistemas legados. Proficiência em 
-          <span className="text-primary"> PHP</span> com histórico comprovado em transições 
-          de monolitos para arquiteturas desacopladas.
+          Desenvolvedor Full Stack movido por excelência técnica e design de software estruturado. Domino todo o ciclo de vida da aplicação: do frontend interativo com <span className="text-primary">Next.js e React</span> ao backend de alta performance em <span className="text-primary">PHP e Node.js</span>. Meu diferencial está na capacidade arquitetural: aplico padrões avançados, arquiteturas modulares e soluções em Cloud (AWS/Docker) para construir sistemas que não apenas resolvem o problema atual, mas estão preparados para a evolução do negócio.
         </p>
 
         <div

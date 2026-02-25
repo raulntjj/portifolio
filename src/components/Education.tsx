@@ -15,7 +15,7 @@ const certifications = [
   'PHP 7 – COD3R',
 ];
 
-const currentStudies = ['HyperF', 'Event Sourcing', 'CQRS', 'Mensageria em PHP e C#'];
+const currentStudies = ['Swoole (HyperF e Laravel Octane)', 'Event Sourcing', 'CQRS', 'Mensageria em PHP e C#'];
 
 const Education = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -67,7 +67,7 @@ const Education = () => {
   }, []);
 
   return (
-    <section id="education" ref={sectionRef} className="section-padding relative">
+    <section id="education" ref={sectionRef} className="section-padding relative bg-secondary/20 noise-overlay">
       <div className="container-custom">
         <div ref={headingRef} className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium text-primary border border-primary/30 mb-4">

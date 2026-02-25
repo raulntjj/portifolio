@@ -11,7 +11,7 @@ const experiences = [
     company: 'VERSA SAÚDE',
     period: 'Dez 2025 – Atual',
     description:
-      'Desenvolvimento de soluções para Consórcios de Saúde com foco em alta disponibilidade e segurança LGPD.',
+      'Desenvolvimento de soluções para Consórcios de Saúde, lidando com alta disponibilidade em arquiteturas multitenancy.',
     current: true,
   },
   {
@@ -108,7 +108,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section id="experience" ref={sectionRef} className="section-padding relative">
+    <section id="experience" ref={sectionRef} className="section-padding relative bg-secondary/20">
       <div className="container-custom">
         <div ref={headingRef} className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium text-primary border border-primary/30 mb-4">

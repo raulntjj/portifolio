@@ -6,29 +6,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 const skillCategories = [
   {
-    title: 'Backend',
+    title: 'Arquitetura & Design',
     color: 'primary',
-    skills: ['PHP (Laravel, Lumen, HyperF)', 'C# (.NET)', 'Node.js (Express, Fastify)', 'PHPUnit'],
+    skills: ['DDD', 'Clean Architecture', 'CQRS', 'CQS', 'Monolito Modular', 'Microsserviços', 'REST'],
+  },
+  {
+    title: 'Backend & APIs',
+    color: 'accent',
+    skills: ['PHP (Laravel, Lumen, Octane e Hyperf)', 'Node.js (Express e Fastify)', 'C# (.NET)'],
   },
   {
     title: 'Frontend & Mobile',
-    color: 'accent',
-    skills: ['JavaScript/TypeScript', 'Next.js', 'React', 'Vue.js', 'Jest', 'Blade (Laravel)', 'React Native'],
-  },
-  {
-    title: 'Bancos & Armazenamento',
     color: 'primary',
-    skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis'],
+    skills: ['JavaScript & TypeScript (React, Next.js)', 'Vue.js', 'React Native', 'Blade'],
   },
   {
-    title: 'Cloud, DevOps & Infra',
+    title: 'Cloud & DevOps',
     color: 'accent',
-    skills: ['AWS (ECS, Lambda, EC2, S3)', 'Docker', 'GitHub Actions', 'Swagger/OpenAPI', 'RabbitMQ'],
+    skills: ['AWS (ECS, SQS, EC2)', 'Docker', 'CI/CD (GitHub Actions)', 'RabbitMQ'],
   },
   {
-    title: 'Gestão & Metodologias',
+    title: 'Bancos de Dados & Cache',
     color: 'primary',
-    skills: ['Scrum', 'Kanban', 'Jira', 'Ritos Ágeis'],
+    skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'],
+  },
+  {
+    title: 'Qualidade & Gestão',
+    color: 'accent',
+    skills: ['PHPUnit', 'Jest', 'Swagger/OpenAPI', 'Scrum & Jira'],
   },
 ];
 
@@ -79,7 +84,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" ref={sectionRef} className="section-padding relative bg-secondary/20">
+    <section id="skills" ref={sectionRef} className="section-padding relative">
       <div className="container-custom">
         <div ref={headingRef} className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full text-sm font-medium text-accent border border-accent/30 mb-4">

@@ -10,6 +10,7 @@ import Projects from '@/components/Projects';
 import Education from '@/components/Education';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import NewHero from '@/components/NewHero';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,10 +25,10 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
       <Navbar />
       <main>
-        <Hero />
+        <NewHero />
         <About />
         <Skills />
         <Experience />
@@ -36,7 +37,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 
